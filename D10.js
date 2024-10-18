@@ -515,8 +515,11 @@ halftree(3)
 */
 
 const tree = (n)=>{
-  
-}
+  for (let i = 1; i<=n;i++){
+    const space = " "                      //utlizzando come prima un comando repeat, ho usato anche una const space per creare il "margine" voluto per la realizazzione
+    console.log(space.repeat(n-i)+"*".repeat((2*i)-1)+space.repeat(n-i)) // l utilizzo di n-i permette che ci siano meno spazi con l avanzare dei cicli
+  }                                                                      // il calcolo (2*i)-1 serve in modo che gli asterischi che formano l'albero vengano generato in una 
+}                                                                        // sequenza a sali di due
 tree(3)
 
 /* ESERCIZIO 29
